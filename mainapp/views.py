@@ -1,13 +1,9 @@
-lesson_2
 import datetime
 
-
-master
 from django.shortcuts import render
 
 
 def main(request):
-lesson_2
     title = "главная"
     products = [
         {
@@ -72,14 +68,3 @@ def contact(request):
     ]
     content = {"title": title, "visit_date": visit_date, "locations": locations}
     return render(request, "mainapp/contact.html", content)
-
-    return render(request, "mainapp/index.html")
-
-
-def products(request):
-    return render(request, "mainapp/products.html")
-
-
-def contact(request):
-    return render(request, "mainapp/contact.html")
-    master
